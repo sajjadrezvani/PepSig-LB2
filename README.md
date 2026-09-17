@@ -5,6 +5,12 @@
 A computational study of **signal peptide prediction in eukaryotic proteins**, combining classical bioinformatics methods with machine-learning approaches.
 
 ---
+## Progress update
+- setup VM, VPN, and github 
+- Data collection
+
+
+---
 
 ## 📌 Project Overview
 
