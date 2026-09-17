@@ -8,7 +8,8 @@ A computational study of **signal peptide prediction in eukaryotic proteins**, c
 ## Progress update
 - setup VM, VPN, and github 
 - Data collection
-
+Positive: 2972 retrieved → 2961 final
+Negative: 20975 retrieved → 20975 final
 
 ---
 
