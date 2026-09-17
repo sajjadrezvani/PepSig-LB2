@@ -10,6 +10,7 @@ A computational study of **signal peptide prediction in eukaryotic proteins**, c
 - Data collection:
 
 > Positive: 2972 retrieved → 2961 final
+> 
 > Negative: 20975 retrieved → 20975 final
 
 ---
