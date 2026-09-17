@@ -27,8 +27,6 @@ This project investigates different computational approaches for identifying sig
 
 ## 🎯 Objectives
 
-The project aims to:
-
 - Collect and curate a high-quality **eukaryotic protein dataset** from UniProtKB.
 - Construct positive and negative datasets for signal peptide prediction.
 - Analyze sequence and dataset characteristics.
@@ -40,7 +38,6 @@ The project aims to:
 - Discuss more recent approaches to signal peptide prediction.
 
 The project therefore covers both:
-
 1. **Signal peptide detection** — does the protein contain a signal peptide?
 2. **Cleavage-site prediction** — where is the signal peptide cleaved?
 
