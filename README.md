@@ -1,7 +1,7 @@
 # 🧬 Signal Peptide Prediction
 
 ## Laboratory of Bioinformatics II — Module 2
-
+### Group 12: Sajjad - Sara - Roxana 
 A computational study of **signal peptide prediction in eukaryotic proteins**, combining classical bioinformatics methods with machine-learning approaches.
 
 ---
