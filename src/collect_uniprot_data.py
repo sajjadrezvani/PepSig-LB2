@@ -22,23 +22,30 @@ query_pos = (
 
 # Negative dataset: same general criteria, no signal peptide at any evidence
 # level, and experimental localization to the specified cellular compartments
-query_neg = (
-    "(reviewed:true) AND "
-    "(taxonomy_id:2759) AND "
-    "(length:[40 TO *]) AND "
-    "(existence:1) AND "
-    "(fragment:false) AND "
-    "NOT (ft_signal:*) AND "
-    "("
-    "(cc_scl_term_exp:SL-0091) OR "
-    "(cc_scl_term_exp:SL-0191) OR "
-    "(cc_scl_term_exp:SL-0173) OR "
-    "(cc_scl_term_exp:SL-0209) OR "
-    "(cc_scl_term_exp:SL-0204) OR "
-    "(cc_scl_term_exp:SL-0039)"
-    ")"
-)
 
+query_neg = (
+        """
+        (existence:1)
+    AND (taxonomy_id:2759)
+    AND (fragment:false)
+    AND (reviewed:true)
+    AND (length:[40 TO *])
+    AND (
+        (cc_scl_term_exp:SL-0091)
+        OR (cc_scl_term_exp:SL-0191)
+        OR (cc_scl_term_exp:SL-0173)
+        OR (cc_scl_term_exp:SL-0209)
+        OR (cc_scl_term_exp:SL-0204)
+        OR (cc_scl_term_exp:SL-0039)
+    )
+    NOT (ft_signal:*)
+    NOT (
+        (cc_scl_term:SL-0095)
+        OR (cc_scl_term:SL-0132)
+        OR (cc_scl_term:SL-0112)
+        OR (cc_scl_term:SL-0243)
+    )
+    """ )
 
 def retrieve_all_uniprot(query):
     """Retrieve all UniProt entries matching a query using pagination."""
